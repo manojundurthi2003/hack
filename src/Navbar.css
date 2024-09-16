@@ -1,0 +1,68 @@
+/* Navbar.css */
+.navbar {
+    background-color: #000000;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* Align the nav list to the right */
+    justify-content: flex-end;
+    /* Add gap from the right corner */
+    margin-right: 20px;
+  }
+  
+  .nav-item {
+    position: relative;
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+  }
+  
+  /* Ensure font color is white for all nav links */
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-item:hover {
+    background-color: #555;
+  }
+  
+  /* Ensure font color is white for dropdown items */
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #444;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 200px;
+  }
+  
+  .nav-item:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown li {
+    padding: 10px;
+  }
+  
+  /* Ensure font color is white for dropdown links */
+  .dropdown li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Background color for dropdown items on hover */
+  .dropdown li:hover {
+    background-color: #666;
+  }
+  

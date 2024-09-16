@@ -1,0 +1,72 @@
+.innovation-projects {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project-card {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 15px;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .project-card h2 {
+    color: #2980b9;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+  }
+  
+  .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .status.ongoing {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .status.upcoming {
+    background-color: #f39c12;
+    color: white;
+  }
+  
+  .project-details {
+    display: none;
+    font-size: 0.9rem;
+    color: #34495e;
+    margin-top: 10px;
+  }
+  
+  .project-card:hover .project-details {
+    display: block;
+  }
+  

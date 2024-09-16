@@ -1,0 +1,33 @@
+.funding-page {
+    padding: 20px;
+    background-color: #fafafa;
+  }
+  
+  .funding-category {
+    margin-bottom: 30px;
+  }
+  
+  .funding-category h2 {
+    font-size: 1.6em;
+    color: #333;
+  }
+  
+  .funding-category p {
+    font-size: 1.1em;
+    line-height: 1.5;
+    color: #666;
+  }
+  
+  button {
+    background-color: #3f5adf;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #3f5adf;
+  }
+  

@@ -1,0 +1,108 @@
+/* WorkingStartups.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+  }
+  
+  .filter-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #fff;
+  }
+  
+  .startup-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .startup-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .startup-info {
+    width: 45%;
+  }
+  
+  .additional-info {
+    width: 50%;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    overflow: hidden;
+  }
+  
+  .startup-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .startup-card:hover .additional-info {
+    max-height: 500px; /* Decreased max height for additional info */
+    opacity: 1;
+  }
+  
+  h2 {
+    color: #007bff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .mission {
+    color: #333;
+    font-size: 1.1em;
+  }
+  
+  .additional-info p,
+  .progress-section h3 {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  .info-row {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  
+  .info-label {
+    font-weight: bold;
+    width: 150px; /* Align side headings */
+    color: #007bff;
+  }
+  
+  span {
+    flex-grow: 1; /* Content next to the side heading */
+  }
+  
