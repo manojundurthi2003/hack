@@ -55,6 +55,7 @@ const InnovationProjects = () => {
           <div key={project.id} className="project-card">
             <h2>{project.name}</h2>
             <p>{project.description}</p>
+            {/* Corrected the className interpolation */}
             <span className={`status ${project.status.toLowerCase()}`}>
               {project.status}
             </span>

@@ -1,4 +1,4 @@
-  import React, { useState } from 'react';
+import React, { useState } from 'react';
   import './WorkingStartups.css'; // Import the CSS
 
   // Example data for all industries

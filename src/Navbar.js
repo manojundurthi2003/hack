@@ -7,14 +7,14 @@ const Navbar = () => {
     <nav className="navbar">
       <ul className="nav-list">
         <li className="nav-item">
-          <Link to="/">Home</Link>
+          <Link to="/HomePage">Home</Link>
         </li>
         <li className="nav-item">
           <span>Researches</span>
           <ul className="dropdown">
             <li><Link to="/researches">Add researches</Link></li>
             <li><Link to="/ongoing projects">Ongoing projects</Link></li>
-            <li><Link to="/">Research projects</Link></li>
+            <li><Link to="/ResearchProjects">Research projects</Link></li>
           </ul>
         </li>
         <li className="nav-item">
@@ -22,23 +22,23 @@ const Navbar = () => {
           <ul className="dropdown">
             <li><Link to="/ipr">Manage patents</Link></li>
             <li><Link to="/ipr status">IPR Status</Link></li>
-            <li><Link to="/ipr">Patent Track</Link></li>
+            <li><Link to="/IPRDashboard">Patent Track</Link></li>
           </ul>
         </li>
         <li className="nav-item">
           <span>Innovation</span>
           <ul className="dropdown">
             <li><Link to="/innovation projects">Innovation projects</Link></li>
-            <li><Link to="/new innovation">New Innovation</Link></li>
-            <li><Link to="/innovation support">Innovation support</Link></li>
+            <li><Link to="/innovation">New innovation</Link></li>
+            <li><Link to="/Innovationsupport">Innovation support</Link></li>
           </ul>
         </li>
         <li className="nav-item">
           <span>Startups</span>
           <ul className="dropdown">
             <li><Link to="/startups">Add Startup</Link></li>
-            <li><Link to="/working startups">Working Startup</Link></li>
-            <li><Link to="/">Startup Resources</Link></li>
+            <li><Link to="/WorkingStartups">Working Startup</Link></li>
+            <li><Link to="/StartupResourcesPage">Startup Resources</Link></li>
             <li><Link to="">Collaboration</Link></li>
           </ul>
         </li>
@@ -49,8 +49,8 @@ const Navbar = () => {
           <span>Support</span>
           <ul className="dropdown">
             <li><Link to="/support">Mentor Program</Link></li>
-            <li><Link to="/support">Support resources</Link></li>
-            <li><Link to="/funding opportunities">Funding opportunities</Link></li>
+            <li><Link to="/SupportResources">Support resources</Link></li>
+            <li><Link to="/FundingOpportunitiesPage">Funding opportunities</Link></li>
           </ul>
         </li>
       </ul>

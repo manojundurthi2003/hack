@@ -1,68 +1,76 @@
-/* Navbar.css */
+/* Navbar Styles */
 .navbar {
-    background-color: #000000;
-    padding: 10px;
-    position: relative;
-  }
-  
-  .nav-list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    /* Align the nav list to the right */
-    justify-content: flex-end;
-    /* Add gap from the right corner */
-    margin-right: 20px;
-  }
-  
-  .nav-item {
-    position: relative;
-    margin-right: 20px;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-  }
-  
-  /* Ensure font color is white for all nav links */
-  .nav-item a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-item:hover {
-    background-color: #555;
-  }
-  
-  /* Ensure font color is white for dropdown items */
-  .dropdown {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #444;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 200px;
-  }
-  
-  .nav-item:hover .dropdown {
-    display: block;
-  }
-  
-  .dropdown li {
-    padding: 10px;
-  }
-  
-  /* Ensure font color is white for dropdown links */
-  .dropdown li a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  /* Background color for dropdown items on hover */
-  .dropdown li:hover {
-    background-color: #666;
-  }
-  
+  position: fixed; /* Stays at the top of the page */
+  top: 0;
+  right: 0;
+  width: 100%; /* Ensure full width for the navbar */
+  background-color: rgb(0, 0, 0); /* Black background like in the screenshot */
+  z-index: 999; /* Ensures it's in the foreground */
+  display: flex;
+  justify-content: flex-end; /* Aligns the navbar content to the right */
+  padding: 1rem 2rem; /* Adjust padding for better spacing */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+  color: aliceblue;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem; /* Adjusted gap for spacing between items */
+  margin: 0; /* Removes default list margin */
+  padding: 0; /* Removes default list padding */
+  right: 50px;
+}
+
+.nav-item {
+  position: relative;
+  right: 80px;
+}
+
+.nav-item a {
+  color: white; /* White text color */
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  font-size: 1rem; /* Adjusted font size */
+  transition: color 0.3s ease; /* Smooth color transition */
+  right: 80px;
+}
+
+.nav-item:hover a {
+  color: #9f2020; /* Highlight on hover */
+}
+
+.dropdown {
+  display: none; /* Initially hidden */
+  position: absolute;
+  background-color: #ffffff; /* Light background for dropdown */
+  top: 100%;
+  left: 0;
+  min-width: 200px; /* Set minimum width to match the design */
+  padding: 0.5rem 0;
+  list-style: none;
+  z-index: 1000; /* Ensures dropdown is above other content */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds shadow for dropdown */
+  border-radius: 4px; /* Slightly rounded corners */
+}
+
+.nav-item:hover .dropdown {
+  display: block; /* Shows the dropdown on hover */
+}
+
+.dropdown li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown li a {
+  color: black; /* Black text for dropdown links */
+  display: block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown li a:hover {
+  background-color: #c1c1c1; /* Light gray background on hover */
+  color: #26b2ab; /* Cyan text on hover */
+}

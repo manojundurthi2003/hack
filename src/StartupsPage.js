@@ -61,6 +61,7 @@ const StartupForm = () => {
     }
   };
 
+
   return (
     <form onSubmit={handleSubmit} className="startup-form">
       <h2>Basic Startup Information</h2>
